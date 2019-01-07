@@ -28,7 +28,7 @@ const main = async () => {
 main ();
 ````
 
-###Methods
+### Methods
 
 * ``async call (code)``
 * ``async rawDevices ()``
