@@ -1,12 +1,20 @@
 {
   "name": "oil-adb",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "adb wrapper",
   "main": "NodeAdb.js",
   "scripts": {
     "test": "node AdbTest.js"
   },
-  "keywords": [],
+  "keywords": ["adb"],
   "author": "Illia Oleksiienko <iliiliilya123@gmail.com>",
-  "license": "ISC"
+  "license": "GNU General Public License v3.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iliiliiliili/oil-adb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iliiliiliili/oil-adb/issues"
+  },
+  "homepage": "https://github.com/iliiliiliili/oil-adb#readme"
 }
