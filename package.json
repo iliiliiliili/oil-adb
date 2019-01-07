@@ -1,0 +1,12 @@
+{
+  "name": "oil-adb",
+  "version": "1.0.0",
+  "description": "adb wrapper",
+  "main": "NodeAdb.js",
+  "scripts": {
+    "test": "node AdbTest.js"
+  },
+  "keywords": [],
+  "author": "Illia Oleksiienko <iliiliilya123@gmail.com>",
+  "license": "ISC"
+}
