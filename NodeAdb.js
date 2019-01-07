@@ -2,13 +2,21 @@
 
 const { exec } = require ('child_process');
 
-let currentDeviceName = ''
+let currentDeviceName = '';
+let isVerbose = false;
 
 const call = (code) => {
     
     return new Promise ((resolve, reject) => {
         
-        exec ('adb ' + (currentDeviceName == '' ? '' : '-s ' + currentDeviceName + ' ') + code, (err, stdout, stderr) => {
+        const command = 'adb ' + (currentDeviceName == '' ? '' : '-s ' + currentDeviceName + ' ') + code;
+        
+        if (isVerbose) {
+            
+            console.log (command);
+        }
+        
+        exec (command, (err, stdout, stderr) => {
            
             if (err) {
                 
@@ -57,6 +65,11 @@ const devices = async () => {
     });
 };
 
+const verbose = (value) => {
+
+    isVerbose = value;
+};
+    
 const use = (device) => {
     
     currentDeviceName = (device.name || device);
@@ -153,6 +166,7 @@ module.exports = {
     tcpip,
     connect,
     disconnect,
-    use,
     screenshot,
+    use,
+    verbose,
 };

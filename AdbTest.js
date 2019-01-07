@@ -12,6 +12,8 @@ const main = async () => {
         s += i + (i % 200 == 0 ? '\n' : '_');
     }
     
+    adb.verbose (true);
+    
     const devices = (await adb.devices ());
     
     console.log ({devices});

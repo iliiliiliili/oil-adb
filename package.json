@@ -1,6 +1,6 @@
 {
   "name": "oil-adb",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "adb wrapper",
   "main": "NodeAdb.js",
   "scripts": {

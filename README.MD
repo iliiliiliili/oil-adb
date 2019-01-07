@@ -61,4 +61,5 @@ main ();
 * ``async disconnect (address)``
 * ``async screenshot (fileName = 's.png', localSavePath = '', androidSavePath = '/sdcard/')``
 * ``use (device)``
+* ``verbose (isVerbose)``
     
