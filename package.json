@@ -1,6 +1,6 @@
 {
   "name": "oil-adb",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "adb wrapper",
   "main": "NodeAdb.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "keywords": ["adb"],
   "author": "Illia Oleksiienko <iliiliilya123@gmail.com>",
-  "license": "GNU General Public License v3.0",
+  "license": "GNU GPL v3.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/iliiliiliili/oil-adb.git"

@@ -60,6 +60,7 @@ main ();
 * ``async connect (address)``
 * ``async disconnect (address)``
 * ``async screenshot (fileName = 's.png', localSavePath = '', androidSavePath = '/sdcard/')``
+* ``async reboot ()``
 * ``use (device)``
 * ``verbose (isVerbose)``
     

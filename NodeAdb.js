@@ -126,6 +126,7 @@ const restartServer = async () => {
 const tcpip = (port = 5555) => call (`tcpip ${port}`);
 const connect = (address) => call (`connect ${address}`);
 const disconnect = (address) => call (`disconnect ${address}`);
+const reboot = () => call (`reboot`);
 const screenshot = async (fileName = 's.png', localSavePath = '', androidSavePath = '/sdcard/') => {
     
     await call (`shell screencap -p ${androidSavePath}${fileName}`);
@@ -167,6 +168,7 @@ module.exports = {
     connect,
     disconnect,
     screenshot,
+    reboot,
     use,
     verbose,
 };
